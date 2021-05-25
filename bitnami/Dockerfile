@@ -1,6 +1,6 @@
 ARG BITNAMI_TAG
 ARG PG_VERSION
-ARG PREV_TS_VERSION=2.2.0
+ARG PREV_TS_VERSION=2.2.1
 ############################
 # Build tools binaries in separate image
 ############################
@@ -49,7 +49,7 @@ ARG PG_VERSION
 LABEL maintainer="Timescale https://www.timescale.com"
 
 # Update list above to include previous versions when changing this
-ENV TIMESCALEDB_VERSION 2.2.1
+ENV TIMESCALEDB_VERSION 2.3.0
 ENV TIMESCALEDB_TELEMETRY off
 
 COPY --from=tools /go/bin/* /usr/local/bin/
